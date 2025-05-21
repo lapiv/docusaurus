@@ -49,4 +49,4 @@ Ez az első blogbejegyzésem, amelyet a Docusaurusszal készítettem!
 
 A Docusaurus egy remek eszköz, amely megkönnyíti a dokumentációk és blogok létrehozását. Ha még nem próbáltad, érdemes adni neki egy esélyt!
 
-További információért látogass el a [Docusaurus hivatalos weboldalára](https://docusaurus.io/).
+További információért látogass el a [Docusaurus hivatalos weboldalára](https://docusaurus.io/). Itt megváltoztattam a szöveget.
