@@ -76,9 +76,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'DocuV site',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'DocuV Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -87,6 +87,13 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
+          },
+          {
+            to: '/docs/guides/installation-guide', // Az új guides szekció első oldalának slug-ja, vagy elérési útja a mappa szerkezetben
+            label: 'Guides',
+            position: 'left',
+            type: 'docSidebar',
+            sidebarId: 'guideSidebar',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -104,7 +111,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/tutorials/intro',
               },
             ],
           },
