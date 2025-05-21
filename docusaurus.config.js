@@ -134,6 +134,10 @@ const config = {
                 label: 'Tutorial',
                 to: '/docs/tutorials/intro',
               },
+              {
+                label: 'Petstore API',
+                to: '/docs/petstore/swagger-petstore-openapi-3-0',
+              },
             ],
           },
           {
