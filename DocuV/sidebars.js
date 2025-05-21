@@ -23,18 +23,7 @@ const sidebars = {
       dirName: 'guides',
     },
   ],
-  // But you can create a sidebar manually
-  /*
-  tutorialSidebar: [
-    'intro',
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-   */
+  myApiSidebar: require('./docs/petstore/sidebar.ts'), // Hivatkozás a plugin által generált oldalsáv fájlra
 };
 
 export default sidebars;
