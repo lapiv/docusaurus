@@ -5,8 +5,6 @@ on:
     branches:
       - main
   workflow_dispatch: # Manuális indítás engedélyezése
-    # Review gh actions docs if you want to further define triggers, paths, etc
-    # [https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on)
 
 jobs:
   build:
@@ -22,12 +20,12 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install --frozen-lockfile
+        run: npm install
       # Adjuk hozzá ezt a lépést, hogy az API specifikáció is felépüljön.
       - name: Build API Docs
-        run: npm docusaurus gen-api-docs all
+        run: npm run docusaurus gen-api-docs all
       - name: Build website
-        run: npm build
+        run: npm run build
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
